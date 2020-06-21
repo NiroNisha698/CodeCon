@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import styles from './App.module.css'
+
+import Typography from "@material-ui/core/Typography";
+import Navbar from "./components/NavBar/navbar";
+
+import Help from "./components/Help/help";
+import display from "./components/Homepage/Display"
+class App extends Component {
+
+
+    render() {
+
+
+
+        return (
+            <div className={styles.container}>
+                <BrowserRouter>
+                    <Navbar/>
+                    <Switch>
+                        <Route exact path="/" component={display}/>
+                        <Route exact path="/help" component={Help}/>
+
+                    </Switch>
+                </BrowserRouter>
+
+
+
+
+
+
+
+                <div className={styles.footer}>
+
+                    <Typography color='black'>
+                        Powered by Beat the eaters team
+                    </Typography>
+                </div>
+
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
