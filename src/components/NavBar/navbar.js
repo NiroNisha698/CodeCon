@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Help from "../Help/help";
-
+import './nav.css'
 class Navbar extends Component {
     render() {
         return (
-            <div>
+            <div className='arrange'>
+
                 <nav className="navbar navbar-expand-lg navbar-light bg-danger">
                     <a className="navbar-brand" href="#">BEAT THE EATERS |</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"

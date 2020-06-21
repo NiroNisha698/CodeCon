@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {fetchData} from "../../api";
 import styles from "../../App.module.css";
+import './display.css'
 import corona from "../../as.jpg";
 import {Cards, Country, Graph} from "../index";
 
@@ -37,10 +38,12 @@ class Display extends Component {
             <div className={styles.container}>
 
 
-                <div className='image'>
-                    <img className={styles.image} src={corona} alt='img' />
 
-                </div>
+                  <div className='imagecss'>
+                      <img className={styles.image} src={corona} alt='img' />
+
+                  </div>
+
 
 
 
