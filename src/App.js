@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import styles from './App.module.css'
-
+import App1 from "./payment/Card-Minimal";
 import Typography from "@material-ui/core/Typography";
 import Navbar from "./components/NavBar/navbar";
 
@@ -22,6 +22,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={display}/>
                         <Route exact path="/help" component={Help}/>
+                        <Route exact path="/app" component={App1}/>
 
                     </Switch>
                 </BrowserRouter>
@@ -32,13 +33,13 @@ class App extends Component {
 
 
 
-                <div className={styles.footer}>
+               {/* <div className={styles.footer}>
 
                     <Typography color='black'>
                         Powered by Beat the eaters team
                     </Typography>
                 </div>
-
+*/}
             </div>
         )
     }
