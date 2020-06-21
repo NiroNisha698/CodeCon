@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {fetchData} from "../../api";
 import styles from "../../App.module.css";
-import corona from "../../s.jpg";
+import corona from "../../as.jpg";
 import {Cards, Country, Graph} from "../index";
 
 
