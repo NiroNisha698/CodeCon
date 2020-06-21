@@ -2,11 +2,15 @@ import React, {useState} from 'react';
 import {loadStripe} from '@stripe/stripe-js';
 import {CardElement, Elements, useElements, useStripe} from "@stripe/react-stripe-js";
 import './pay.css'
+import backg from '../back.jpg'
+import styles from "../App.module.css";
+import corona from "../as.jpg";
 
 const CARD_OPTIONS = {
     iconStyle: 'solid',
     style: {
         base: {
+
             iconColor: '#c4f0ff',
             color: '#fff',
             fontWeight: 500,
@@ -217,7 +221,11 @@ const CheckoutForm = () => {
             <SubmitButton processing={processing} error={error} disabled={!stripe}>
                 Pay
             </SubmitButton>
+
+
+            <img  className='help' src={backg} alt='img' />
         </form>
+
     );
 };
 
