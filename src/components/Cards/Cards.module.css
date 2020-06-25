@@ -16,3 +16,11 @@
 .deaths{
     border-bottom: 10px solid rgba(255,0,0,0.5);
 }
+.inHospital{
+    border-bottom: 10px solid rgba(255, 119, 97, 0.5);
+}
+.newDeath{
+    border-bottom: 10px solid rgba(255, 0, 3, 0.5);
+
+}
+

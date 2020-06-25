@@ -2,6 +2,29 @@ import axios from 'axios'
 
 const url= 'https://covid19.mathdro.id/api';
 
+const url1= 'https://hpb.health.gov.lk/api/get-current-statistical';
+
+
+export const fetchLK= async ()=>{
+    try{
+        const {data:{data:{ local_new_cases,
+            local_total_cases,
+            local_total_number_of_individuals_in_hospitals,
+            local_deaths,
+            local_recovered,update_date_time,local_new_deaths}}} = await axios.get(url1);
+
+        return {local_new_cases,
+            local_total_cases,
+            local_total_number_of_individuals_in_hospitals,
+            local_deaths,
+            local_recovered,update_date_time ,local_new_deaths}
+
+
+    }catch(error){
+        console.log(error)
+    }
+}
+
 export const fetchData= async (country)=>{
 
     let changeableurl=url;
