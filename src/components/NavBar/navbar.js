@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import Help from "../Help/help";
 import './nav.css'
+import health from '../Images/he.png'
+
 class Navbar extends Component {
     render() {
         return (
-            <div className='arrange'>
+            <div className='container'>
+
+                <div className='arrange'>
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-danger">
                     <a className="navbar-brand" href="#">BEAT THE EATERS |</a>
@@ -28,6 +32,7 @@ class Navbar extends Component {
                         </ul>
                     </div>
                 </nav>
+                </div>
             </div>
         );
     }

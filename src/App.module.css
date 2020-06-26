@@ -8,6 +8,12 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+.grpa{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 image{
     width:50%;

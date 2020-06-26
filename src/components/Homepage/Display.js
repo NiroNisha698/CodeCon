@@ -4,7 +4,7 @@ import styles from "../../App.module.css";
 import './display.css'
 import corona from "../../as.jpg";
 import {Cards, Country, Graph} from "../index";
-
+import Slide from "./Slide";
 
 class Display extends Component {
     state={
@@ -38,16 +38,13 @@ class Display extends Component {
             <div className={styles.container}>
 
 
-
-                  <div className='imagecss'>
-                      <img className={styles.image} src={corona} alt='img' />
-
-                  </div>
+<Slide/>
 
 
 
 
                 <Cards data={data}/>
+
                 <Country handleCountryChange={this.handleCountryChange}/>
                 <Graph data={data} country={country}/>
 

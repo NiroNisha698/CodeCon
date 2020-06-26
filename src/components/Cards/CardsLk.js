@@ -77,7 +77,7 @@ const CardsLk=({data:{data:local_new_cases,
                         </Typography>
 
 
-                        <Typography variant='body2'> Number of Active Cases</Typography>
+                        <Typography variant='body2'> Number of Death Cases</Typography>
                     </CardContent>
                 </Grid>
 
@@ -101,7 +101,7 @@ const CardsLk=({data:{data:local_new_cases,
 
                 <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.newDeath)}>
                     <CardContent>
-                        <Typography color='textSecondary' gutterBottom>Suspected patients in Hospital</Typography>
+                        <Typography color='textSecondary' gutterBottom>New deaths</Typography>
 
                         <Typography variant='h5'>
                             <CountUp start={0}
