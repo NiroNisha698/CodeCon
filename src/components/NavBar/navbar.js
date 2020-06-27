@@ -25,8 +25,12 @@ class Navbar extends Component {
                             <li className="nav-item ">
                                 <a className="nav-link" href="/lk">Sri Lanka <span className="sr-only"></span></a>
                             </li>
+
                             <li className="nav-item">
                                 <a className="nav-link" href='/app'>Help the needy</a>
+                            </li>
+                            <li className="nav-item ">
+                                <a className="nav-link" href="/lk">Contact us<span className="sr-only"></span></a>
                             </li>
 
                         </ul>

@@ -21,10 +21,10 @@ const CardsLk=({data:{data:local_new_cases,
     return(
         <div className={styles.container}>
 
-<h3 >Current Sitution in Sri Lanka {local_new_cases}</h3>
 
 
-            <Grid container spacing={3} justify='center'>
+
+            <Grid container spacing={4} justify='center'>
 
 
 

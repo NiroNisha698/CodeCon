@@ -1,3 +1,4 @@
+/*
 
 
 * {
@@ -97,7 +98,7 @@ body {
 }
 .FormRowInput:-webkit-autofill {
     -webkit-text-fill-color: #fce883;
-    /* Hack to hide the default webkit autofill */
+    !* Hack to hide the default webkit autofill *!
     transition: background-color 100000000s;
     animation: 1ms void-animation-out;
 }
@@ -211,3 +212,4 @@ body {
     cursor: pointer;
     background: transparent;
 }
+*/
