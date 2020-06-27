@@ -13,6 +13,7 @@
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
+    "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.0.1",
     "react-chartjs-2": "^2.9.0",
     "react-countup": "^4.3.3",

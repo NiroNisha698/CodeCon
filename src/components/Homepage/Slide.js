@@ -4,12 +4,27 @@ import s from '../../back.jpg'
 import pic1 from '../Images/p1.jpg'
 import pic2 from '../Images/pic5.jpg'
 import pic3 from '../Images/pic4.jpg'
+import pic4 from '../Images/p6.jpg'
+import {Wave} from "react-animated-text";
 class Slide extends Component {
 
     render() {
         return (
             <div>
                 <Carousel>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={pic4}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <Wave text='Welcome to HELP EVERYONE' effect="stretch" effectChange={2.2}
+
+                            />
+
+                        </Carousel.Caption>
+                    </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"

@@ -19,7 +19,7 @@ const CardsLk=({data:{data:local_new_cases,
     }
 
     return(
-        <div className={styles.container}>
+        <div className={styles.container1}>
 
 
 
