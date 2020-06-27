@@ -11,6 +11,7 @@ const CardsLk=({data:{data:local_new_cases,
     local_total_cases,
     local_total_number_of_individuals_in_hospitals,
     local_deaths,
+    local_active_cases,
     local_recovered,update_date_time,local_new_deaths,daily_pcr_testing_data}})=>{
     if(!local_total_cases){
         console.log(local_total_cases)
@@ -42,8 +43,26 @@ const CardsLk=({data:{data:local_new_cases,
                         </Typography>
 
 
-                        <Typography variant='body2'> Number of Recoveries Cases</Typography>
+                        <Typography variant='body2'>Number of Confirmed Cases</Typography>
                     </CardContent>
+                </Grid>
+
+                    <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.infected)}>
+                        <CardContent>
+                            <Typography color='textSecondary' gutterBottom>Active Cases</Typography>
+
+                            <Typography variant='h5'>
+                                <CountUp start={0}
+                                         end={local_active_cases}
+                                         duration={2.5}
+                                         separator=','
+                                />
+                                <Typography color='textSecondary'>{new Date(update_date_time).toDateString()}</Typography>
+                            </Typography>
+
+
+                            <Typography variant='body2'> Number of Active Cases</Typography>
+                        </CardContent>
                 </Grid>
 
                 <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.recovered)}>
@@ -60,9 +79,30 @@ const CardsLk=({data:{data:local_new_cases,
                         </Typography>
 
 
-                        <Typography variant='body2'> Number of Active Cases</Typography>
+                        <Typography variant='body2'> Number of Recovered Cases</Typography>
                     </CardContent>
                 </Grid>
+
+
+
+                <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.inHospital)}>
+                <CardContent>
+                    <Typography color='textSecondary' gutterBottom> Suspected</Typography>
+
+                    <Typography variant='h5'>
+                        <CountUp start={0}
+                                 end={local_total_number_of_individuals_in_hospitals}
+                                 duration={2.5}
+                                 separator=','
+                        />
+                        <Typography color='textSecondary'>{new Date(update_date_time).toDateString()}</Typography>
+                    </Typography>
+
+
+                    <Typography variant='body2'> Number of Suspected patients</Typography>
+                </CardContent>
+            </Grid>
+
 
                 <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.deaths)}>
                     <CardContent>
@@ -80,24 +120,6 @@ const CardsLk=({data:{data:local_new_cases,
                         <Typography variant='body2'> Number of Death Cases</Typography>
                     </CardContent>
                 </Grid>
-
-                <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.inHospital)}>
-                <CardContent>
-                    <Typography color='textSecondary' gutterBottom> in Hospital</Typography>
-
-                    <Typography variant='h5'>
-                        <CountUp start={0}
-                                 end={local_total_number_of_individuals_in_hospitals}
-                                 duration={2.5}
-                                 separator=','
-                        />
-                        <Typography color='textSecondary'>{new Date(update_date_time).toDateString()}</Typography>
-                    </Typography>
-
-
-                    <Typography variant='body2'> Number of Suspected patients</Typography>
-                </CardContent>
-            </Grid>
 
                 <Grid item component={Card} xs={12} md={3}className={cx(styles.card,styles.newDeath)}>
                     <CardContent>

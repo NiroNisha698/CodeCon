@@ -4,7 +4,7 @@ import CardsLk from "../Cards/CardsLk";
 import co from '../Images/he.png'
 import styles from '../Cards/Cards.module.css'
 import { Wave } from 'react-animated-text';
-
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 class Srilanka extends Component {
 
@@ -24,14 +24,23 @@ class Srilanka extends Component {
 
 
 
-<div className={styles.image}>
+                <div className={styles.image}>
 
+                    <a href='https://www.hpb.health.gov.lk/en' ><img src={co} width='1000' height='100' /></a>
 
-            <a href='https://www.hpb.health.gov.lk/en' >   <img src={co} width='1000' height='100' /></a>
-
-</div>
+                </div>
                 <CardsLk data={data}/>
-
+                <div className={styles.twi}>
+                    <h7 className="justify-content-center">WHO Sri Lanka</h7>
+                <TwitterTimelineEmbed
+                    sourceType="profile"
+                    screenName="whosrilanka"
+                    options={{height: 400,width:600}}
+                />
+                <TwitterFollowButton
+                    screenName={'whosrilanka'}
+                />
+            </div>
              </div>
         );
     }

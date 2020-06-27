@@ -7,6 +7,7 @@ import {Cards, Country, Graph} from "../index";
 import Slide from "./Slide";
 import Page from 'react-page-loading'
 import { Wave } from 'react-animated-text';
+import {Circle} from "react-spinners-css";
 
 
 class Display extends Component {
@@ -39,7 +40,7 @@ class Display extends Component {
 
         return (
             <div className={styles.container}>
-                <Page loader={"bar"} color={"#a90000"} size={10}   >
+                <Page loader={"bubble"} color={"#a90000"} size={10}   >
 
 
 <Slide/>
