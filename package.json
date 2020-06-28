@@ -20,6 +20,7 @@
     "react-dom": "^16.13.1",
     "react-page-loading": "^1.0.2",
     "react-scripts": "3.4.1",
+    "reactstrap": "^8.5.1",
     "stripe": "^8.64.0"
   },
   "scripts": {

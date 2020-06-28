@@ -7,7 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import Navbar from "./components/NavBar/navbar";
 import Srilanka from "./components/Srilanka/Srilanka";
 import Help from "./components/Help/help";
-import display from "./components/Homepage/Display"
+import display from "./components/Homepage/Display";
+import {RegisterModal} from "./components/auth/RegisterModel";
+import Login from "./components/auth/LoginForm";
+import contactus from './contact/contactus';
+
 class App extends Component {
 
 
@@ -24,6 +28,9 @@ class App extends Component {
                         <Route exact path="/help" component={Help}/>
                         <Route exact path="/app" component={App1}/>
                         <Route exact path="/lk" component={Srilanka}/>
+                        <Route exact path="/contact" component={contactus}/>
+                        <Route exact path="/Login" component={Login}/>
+                        <Route exact path="/Register" component={RegisterModal}/>
 
                     </Switch>
                 </BrowserRouter>
