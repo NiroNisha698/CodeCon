@@ -40,13 +40,9 @@ function Payment() {
     }
 
     return (
-<<<<<<< HEAD
 
-
-
-=======
         <div>
->>>>>>> c0b736b1935ac3497f2d6328f5a65b1fbd48db2e
+
         <div className="container1">
             <div className="product">
                 <h1>{product.name}</h1>
@@ -90,8 +86,7 @@ function Payment() {
 
         </div>
 
-<<<<<<< HEAD
-  </div>
+        </div>
 
 
 
@@ -99,12 +94,10 @@ function Payment() {
 
 
 
-=======
             <div className='align-content-lg-center'>
 
             </div>
         </div>
->>>>>>> c0b736b1935ac3497f2d6328f5a65b1fbd48db2e
 
     );
 
