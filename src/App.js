@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import styles from './App.module.css'
-import App1 from "./payment/Card-Minimal";
+import App1 from "./payment/Payment";
 import Typography from "@material-ui/core/Typography";
 import Navbar from "./components/NavBar/navbar";
 import Srilanka from "./components/Srilanka/Srilanka";
