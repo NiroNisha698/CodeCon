@@ -7,10 +7,12 @@ import Typography from "@material-ui/core/Typography";
 import Navbar from "./components/NavBar/navbar";
 import Srilanka from "./components/Srilanka/Srilanka";
 import Help from "./components/Help/help";
-import display from "./components/Homepage/Display";
+import display from "./components/Homepage/Display"
+import Payment from "./payment/Payment";
 import {RegisterModal} from "./components/auth/RegisterModel";
 import Login from "./components/auth/LoginForm";
 import contactus from './contact/contactus';
+
 
 class App extends Component {
 
@@ -26,6 +28,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={display}/>
                         <Route exact path="/help" component={Help}/>
+                        <Route exact path="/pay" component={Payment}/>
                         <Route exact path="/app" component={App1}/>
                         <Route exact path="/lk" component={Srilanka}/>
                         <Route exact path="/contact" component={contactus}/>
@@ -42,7 +45,6 @@ class App extends Component {
 
 
                {/* <div className={styles.footer}>
-
                     <Typography color='black'>
                         Powered by Beat the eaters team
                     </Typography>

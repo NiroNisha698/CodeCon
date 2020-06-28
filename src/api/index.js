@@ -9,12 +9,14 @@ export const fetchLK= async ()=>{
     try{
         const {data:{data:{ local_new_cases,
             local_total_cases,
+            local_active_cases,
             local_total_number_of_individuals_in_hospitals,
             local_deaths,
             local_recovered,update_date_time,local_new_deaths}}} = await axios.get(url1);
 
         return {local_new_cases,
             local_total_cases,
+            local_active_cases,
             local_total_number_of_individuals_in_hospitals,
             local_deaths,
             local_recovered,update_date_time ,local_new_deaths}

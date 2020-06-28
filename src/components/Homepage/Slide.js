@@ -12,17 +12,19 @@ class Slide extends Component {
         return (
             <div>
                 <Carousel>
+
                     <Carousel.Item>
+
                         <img
                             className="d-block w-100"
                             src={pic4}
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <Wave text='Welcome to HELP EVERYONE' effect="stretch" effectChange={2.2}
+                           <h1><Wave text='Welcome to HELP EVERYONE' effect="stretch" effectChange={2.2}
 
                             />
-
+                           </h1>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -30,6 +32,8 @@ class Slide extends Component {
                             className="d-block w-100"
                             src={pic1}
                             alt="First slide"
+
+
                         />
                         <Carousel.Caption>
                             <h3>Help Everyone Donate Now</h3>
