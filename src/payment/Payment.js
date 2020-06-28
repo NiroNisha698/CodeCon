@@ -56,7 +56,7 @@ function Payment() {
         </div>
 
             <div className='align-content-lg-center'>
-                <h2 className='text-danger'>We have helped</h2>
+
             </div>
         </div>
 

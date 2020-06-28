@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Wave} from "react-animated-text";
 // import backg from '../components/auth/bck.jpg'
 // import Navbar1 from "./navbar.component"
 
@@ -70,11 +71,39 @@ export default class contactus extends Component {
             // <body background={pic}>
             // <Navbar1/>
             <div className={"container"} style={{width:'45.4rem',height:'41rem'}} >
+
+                <h1 className='text-primary text-center'>Contact us</h1>
+                <div className="container">
+                    <div className="row d-flex mb-5 contact-info">
+                        <div className="w-100"></div>
+                        <div className="col-md-3 d-flex">
+                            <div className="info bg-light
+ p-4">
+                                <p className='text-dark'><span className='text-primary'>Address:</span><br></br>
+                                    87 7/5 Galle Road Colombo-06</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 d-flex">
+                            <div className="info bg-light p-4">
+                                <p><span className='text-dark'>Phone:</span> <a href="tel://0777885111">0777885111</a></p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 d-flex">
+                            <div className="info bg-light p-4">
+                                <p><span className='text-dark'>Email:</span> <a href="mailto:info@donut.com">info@donut.com</a></p>
+                            </div>
+                        </div>
+                        <div className="col-md-3 d-flex">
+                            <div className="info bg-light p-4">
+                                <p><span className='text-dark'>Your Donation Helps A Family</span></p>
+                            </div>
+                        </div>
+                    </div>
+
                  <br/>
                 <div className={"card"}style={{width:'50.4rem',height:'38rem',opacity:0.9}}>
 
                <br/>
-                    <b>  <i> <h3 align={"center"}>Contact us</h3></i></b>
 
                     <form onSubmit={this.onSubmit}>
                         <div className="container">
@@ -112,14 +141,15 @@ export default class contactus extends Component {
                                 </div>
                             </div>
 
-                            <div className="form-group">
+                            <div className="form-group" >
                                 <input type="submit" value="Submit" className="btn btn-primary" />
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            // </body>
+            </div>
+
         )
     }
 }
