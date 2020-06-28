@@ -1,10 +1,11 @@
 const cors = require("cors");
 const express = require("express");
+const uuid = require("uuid");
 const mongoose = require('mongoose');
 const stripe = require("stripe")(
     "sk_test_51GxZ12EXtqLGnPz4balALYOhHmWAKVbU3en1MWX0mDom9D42HM0lvCsrbvYpBmmlPeZ52Ut9HrVGUS6YJl3dmh1o00myinqDaW"
 );
-const uuid = require("uuid/v4");
+
 
 require('dotenv').config();
 const app = express();
@@ -91,7 +92,7 @@ app.get('/v1/balance',(req,res)=>{
 );
 
 app.post("/checkout", async (req, res) => {
-    
+
     console.log("Request:", req.body);
 
     let error;
