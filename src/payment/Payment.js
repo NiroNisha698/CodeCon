@@ -33,6 +33,7 @@ function Payment() {
     }
 
     return (
+        <div>
         <div className="container1">
             <div className="product">
                 <h1>{product.name}</h1>
@@ -50,7 +51,17 @@ function Payment() {
 
             />
 
+
+
         </div>
+
+            <div className='align-content-lg-center'>
+                <h2 className='text-danger'>We have helped</h2>
+            </div>
+        </div>
+
     );
+
+
 }
 export default Payment;

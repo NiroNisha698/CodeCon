@@ -33,7 +33,7 @@ function Help () {
                     setBalance(response.data.balance.pending);
 
                     console.log(response.data.balance);
-                    console.log('Check', Data)
+                    console.log('Check')
 
                 } else {
                     alert("Failed");
