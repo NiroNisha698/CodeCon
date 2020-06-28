@@ -232,10 +232,13 @@ body {
 }
 
 .product {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Falzheimersfamily.org%2Fdonate%2F&psig=AOvVaw1aqccSIXGJyHuNztNMu1ZZ&ust=1593340523760000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDklJvmoeoCFQAAAAAdAAAAABAD");
+    background-image:
+    url("dn1.jpg");
+        background-size: 50px 100px;
+
     pointer-events: none;
     -webkit-background-size: contain;
-    background-size: contain;
+
     background-repeat: no-repeat;
     background-position: 50%;
     -webkit-transition: opacity 0.2s;
@@ -244,7 +247,7 @@ body {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
-    height: 300px;
+    height: 800px;
     width: 500px;
 }
 
@@ -256,7 +259,7 @@ h3 {
     margin-left: 0.25em;
 }
 .container1{
-    display: flex;
+
     justify-content: center;
     width: 60%;
     margin-left: 18%;
@@ -265,4 +268,67 @@ h3 {
             rgba(131, 58, 180) 0%,
             rgba(220, 69, 252, 1) 100%
     );
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
 }
+
+.myImg{
+    color: #282c34;
+
+}
+
+
+.blinking{
+    animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText  {
+    0%{     color: #000; }
+    49%{    color: #780404; }
+    60%{    color:
+transparent;}
+99%{
+color: transparent; }
+100%{   color: #000;}
+}
+
+
+
+
+
+
+
+
+.slider {
+    height: 140px;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #b981dc;
+    text-align: center;
+    text-color: #08208d;
+
+}
+
+.slider div, .slider div p {
+    margin: 0;
+    padding: 0;
+}
+
+.slider div {
+    animation: slide 10s 2s infinite;
+}
+
+@keyframes slide {
+    0% { margin-top: 0; }
+    25% { margin-top: -18px; }
+    50% { margin-top: -36px; }
+    75% { margin-top: -54px; }
+    100% { margin-top: 0; }
+}
+
+
+
+
+

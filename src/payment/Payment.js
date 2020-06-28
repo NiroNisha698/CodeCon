@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -7,6 +8,12 @@ import { toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./pay.css";
+import {Carousel} from "react-bootstrap";
+import pic4 from "../components/Images/p6.jpg";
+import {Wave} from "react-animated-text";
+import pic1 from "../components/Images/p1.jpg";
+import pic2 from "../components/Images/pic5.jpg";
+import pic3 from "../components/Images/pic4.jpg";
 
 toast.configure();
 
@@ -33,6 +40,9 @@ function Payment() {
     }
 
     return (
+
+
+
         <div className="container1">
             <div className="product">
                 <h1>{product.name}</h1>
@@ -49,8 +59,40 @@ function Payment() {
 
 
             />
+<br/>
+<br/>
+
+            <div className="myImg" >
+                <span className="blinking"><h1>Donated Districts</h1></span>
+
+            <br/>
+            <br/>
+
+            <div className="slider">
+                <div>
+                <p>Colombo</p>
+                <p>Gampaha</p>
+                <p>Ratnapura</p>
+                    <p>Jaffna</p>
+                    <p>Kandy</p>
+                    <p>Moneragala</p>
+                    <p>Matara</p>
+                </div>
+            </div>
+
+
 
         </div>
+
+  </div>
+
+
+
+
+
+
+
+
     );
 }
 export default Payment;
