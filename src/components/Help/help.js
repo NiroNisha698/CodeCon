@@ -45,17 +45,17 @@ function Help () {
 
 
 
-        return (
-            <div>
-             {Data.subscriptions}
+    return (
+        <div>
+            {Data.subscriptions}
 
-            </div>
+        </div>
 
 
 
     )
 
-    }
+}
 
 
 
