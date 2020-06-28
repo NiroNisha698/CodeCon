@@ -21,7 +21,9 @@
     "react-page-loading": "^1.0.2",
     "react-scripts": "3.4.1",
     "react-spinners-css": "^1.1.9",
+    "react-stripe-checkout": "^2.6.3",
     "react-tiger-transition": "^4.1.2",
+    "react-toastify": "^6.0.6",
     "react-twitter-embed": "^3.0.3",
     "stripe": "^8.64.0"
   },
