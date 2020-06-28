@@ -8,6 +8,8 @@ import Navbar from "./components/NavBar/navbar";
 import Srilanka from "./components/Srilanka/Srilanka";
 import Help from "./components/Help/help";
 import display from "./components/Homepage/Display"
+import Payment from "./payment/Payment";
+
 class App extends Component {
 
 
@@ -22,6 +24,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={display}/>
                         <Route exact path="/help" component={Help}/>
+                        <Route exact path="/pay" component={Payment}/>
                         <Route exact path="/app" component={App1}/>
                         <Route exact path="/lk" component={Srilanka}/>
 
