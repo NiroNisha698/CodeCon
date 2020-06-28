@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
+    "cors": "^2.8.5",
     "react": "^16.13.1",
     "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.0.1",
@@ -26,7 +27,9 @@
     "react-toastify": "^6.0.6",
     "react-twitter-embed": "^3.0.3",
     "reactstrap": "^8.5.1",
-    "stripe": "^8.64.0"
+    "stripe": "^8.64.0",
+    "express": "latest",
+    "uuid": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -59,7 +59,7 @@ window.location = '/login';
 
     }render() {
         return (
-            <body background={pic} >
+            <body>
             <div className={"container"} style={{width:'40.4rem',height:'41rem'}} >
                 <br/><br/>
                 <div className={"row"}>

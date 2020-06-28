@@ -91,7 +91,7 @@ export default class contactus extends Component {
                             </div>
                             <div className="form-group">
                                 <label>Email: </label>
-                                <input  type="text"
+                                <input  type="email"
                                         required
                                         placeholder={"Enter Email Address"}
                                         className="form-control"

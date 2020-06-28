@@ -27,7 +27,7 @@ class Navbar extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href='/app'>Help the needy</a>
+                                <a className="nav-link" href='/pay'>Help the needy</a>
                             </li>
                             <li className="nav-item ">
                                 <a className="nav-link" href="/contact">Contact us<span className="sr-only"></span></a>

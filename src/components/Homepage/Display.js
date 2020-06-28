@@ -139,7 +139,7 @@ class Display extends Component {
                             <div className="col-md-12 text-center">
                                 <p>
                                     <script>document.write(new Date().getFullYear());</script>
-                                    All rights reserved | HELP EVERYONE{" "}
+                                    All rights reserved | BEAT THE EATERS{" "}
                                     <i className="icon-heart color-danger" aria-hidden="true"></i>
                                 </p>
                             </div>

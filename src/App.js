@@ -7,12 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import Navbar from "./components/NavBar/navbar";
 import Srilanka from "./components/Srilanka/Srilanka";
 import Help from "./components/Help/help";
-import display from "./components/Homepage/Display"
+import display from "./components/Homepage/Display";
 import Payment from "./payment/Payment";
 import {RegisterModal} from "./components/auth/RegisterModel";
 import Login from "./components/auth/LoginForm";
 import contactus from './contact/contactus';
-
 
 class App extends Component {
 
