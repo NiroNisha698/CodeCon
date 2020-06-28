@@ -32,8 +32,6 @@ function Payment() {
         }
     }
 
-
-
     return (
         <div className="container">
             <div className="product">

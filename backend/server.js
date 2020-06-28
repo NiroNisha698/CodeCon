@@ -15,40 +15,21 @@ app.get("/", (req, res) => {
 });
 
 app.get('/v1/customers',(req,res)=>{
-
     var stripe = require('stripe')('sk_test_51GxZ12EXtqLGnPz4balALYOhHmWAKVbU3en1MWX0mDom9D42HM0lvCsrbvYpBmmlPeZ52Ut9HrVGUS6YJl3dmh1o00myinqDaW');
 
     stripe.customers.list(
         {limit: 3},
         function(err, customers) {
-            if (err) return res.status(400).json({ success: false, err });
-            res.status(200).json({ success: true, customers });
-            console.log(customers.data)
-        });
+
+
+
+
         }
-
     );
-app.get('/v1/balance',(req,res)=>{
-
-    const stripe = require('stripe')('sk_test_51GxZ12EXtqLGnPz4balALYOhHmWAKVbU3en1MWX0mDom9D42HM0lvCsrbvYpBmmlPeZ52Ut9HrVGUS6YJl3dmh1o00myinqDaW');
-
-    stripe.balance.retrieve(function(err, balance) {
-        if (err) return res.status(400).json({ success: false, err });
-        res.status(200).json({ success: true, balance });
-        console.log(balance.data)
-    });
-
-
-
-
-
-    }
-
-);
-
-
+})
 
 app.post("/checkout", async (req, res) => {
+    
     console.log("Request:", req.body);
 
     let error;
@@ -93,10 +74,6 @@ app.post("/checkout", async (req, res) => {
 
     res.json({ error, status });
 });
-
-
-
-
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log("Server started " + port));
