@@ -224,12 +224,12 @@ body {
     font-weight: 200;
 }
 
-.container {
+/* .container {
     display: grid;
     align-items: center;
     justify-items: center;
     padding: 1em;
-}
+} */
 
 .product {
     background-image:

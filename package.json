@@ -26,6 +26,7 @@
     "react-tiger-transition": "^4.1.2",
     "react-toastify": "^6.0.6",
     "react-twitter-embed": "^3.0.3",
+    "reactstrap": "^8.5.1",
     "stripe": "^8.64.0",
     "express": "latest",
     "uuid": "latest"

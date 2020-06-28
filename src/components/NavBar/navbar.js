@@ -30,7 +30,11 @@ class Navbar extends Component {
                                 <a className="nav-link" href='/pay'>Help the needy</a>
                             </li>
                             <li className="nav-item ">
-                                <a className="nav-link" href="/lk">Contact us<span className="sr-only"></span></a>
+                                <a className="nav-link" href="/contact">Contact us<span className="sr-only"></span></a>
+                            </li>
+                            
+                            <li className="nav-item ">
+                                <a className="nav-link" href="/login">Sign In<span className="sr-only"></span></a>
                             </li>
 
                         </ul>
