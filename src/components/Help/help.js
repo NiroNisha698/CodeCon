@@ -1,5 +1,6 @@
 import React, {Component, useEffect, useState} from 'react';
 import * as axios from "axios";
+import {Card} from "react-bootstrap";
 
 function Help () {
 
@@ -44,16 +45,14 @@ function Help () {
     }, []);
 
 
+return(
+    <div>
 
-    return (
-        <div>
-            {Data.subscriptions}
-
-        </div>
-
+    </div>
+)
 
 
-    )
+
 
 }
 

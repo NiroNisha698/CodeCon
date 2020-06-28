@@ -28,16 +28,17 @@ function Payment() {
         if (status === "success") {
             toast("Success! Check email for detail", { type: "success" });
         } else {
-            toast("Somthing went wrong", { type: "error" });
+            toast("Something went wrong", { type: "error" });
         }
     }
 
     return (
-        <div className="container">
+        <div className="container1">
             <div className="product">
                 <h1>{product.name}</h1>
                 <h3> Donation Amount: LKR {product.price}</h3>
             </div>
+
             <StripeCheckout
                 stripeKey="pk_test_51GxZ12EXtqLGnPz4zrtiAW3ac8Bj6Fgk5WK6DeNaieuq5JzkGVXiAd79b6zJyRvNnlIRJOoBEuROlaQqRsRD9SBM00J1xCcHOv"
                 token={handleToken}
@@ -45,7 +46,10 @@ function Payment() {
                 shippingAddress
                 amount={product.price * 100}
                 name={product.name}
+
+
             />
+
         </div>
     );
 }
