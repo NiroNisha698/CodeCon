@@ -13,6 +13,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
+
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
 );
@@ -20,7 +22,12 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
-
+//dummy
+app.get('/',(req,res)=>{
+    res.json({
+        message:"Working"
+    })
+})
 var Users = require('./routes/api/Users');
 var Auth = require('./routes/api/auth');
 
