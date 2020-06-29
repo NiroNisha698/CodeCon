@@ -98,14 +98,10 @@ class Display extends Component {
                                     <h2 className="text-info">Menu</h2>
                                     <ul className="list-unstyled">
 
-                                        <li>
-                                            <a href="#" className="py-2 d-block">
-                                                About
-                                            </a>
-                                        </li>
+
 
                                         <li>
-                                            <a href="/Contactus" className="py-2 d-block">
+                                            <a href="/contact" className="py-2 d-block">
                                                 Contact Us
                                             </a>
                                         </li>
@@ -139,6 +135,7 @@ class Display extends Component {
                             <div className="col-md-12 text-center">
                                 <p>
                                     <script>document.write(new Date().getFullYear());</script>
+
                                     All rights reserved | BEAT THE EATERS{" "}
                                     <i className="icon-heart color-danger" aria-hidden="true"></i>
                                 </p>
