@@ -12,7 +12,7 @@ class Navbar extends Component {
                     <ul>
                         <li className="text-danger"><a  href='/'>BEAT THE EATERS |</a></li>
                         <li><a className="active" href='/'>Home</a></li>
-                        <li><a href="/">Sri Lanka</a></li>
+                        <li><a href="/lk">Sri Lanka</a></li>
                         <li><a href="/pay">Donation</a></li>
                         <li><a href="/login">Sign In</a></li>
                         <li><a href="/contact">Contact us</a></li>
