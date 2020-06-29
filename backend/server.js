@@ -1,5 +1,6 @@
 const cors = require("cors");
 const express = require("express");
+
 const uuid = require("uuid");
 const mongoose = require('mongoose');
 const stripe = require("stripe")(
@@ -15,19 +16,24 @@ app.use(cors());
 
 
 
-const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true }
+
+mongoose.connect('mongodb+srv://loginpri:loginpri@cluster0-c58qd.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority',
+    {useNewUrlParser:true,
+        useCreateIndex: true,
+
+
+        useUnifiedTopology: true,
+    },(err)=>{
+
+        if(!err){
+            console.log('Mongo Connected dawwwsw');
+        }else {
+            console.log('Not Connected dawq');
+        }
+
+    }
+
 );
-const connection = mongoose.connection;
-connection.once('open', () => {
-    console.log("MongoDB database connection established successfully");
-})
-//dummy
-app.get('/',(req,res)=>{
-    res.json({
-        message:"Working"
-    })
-})
 var Users = require('./routes/api/Users');
 var Auth = require('./routes/api/auth');
 
