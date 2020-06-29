@@ -52,7 +52,7 @@ export default class contactus extends Component {
         };
 
 
-        axios.post('http://localhost:5000/contacts/add', contact)
+        axios.post('https://codebeattheeaters.herokuapp.com/contacts/add', contact)
         .then(res => alert(res.data) )//console.log(res.data));
 
         this.setState({

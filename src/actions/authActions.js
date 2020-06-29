@@ -17,7 +17,7 @@ export const loadUser = () => (dispatch, getState) => {
     dispatch({ type: USER_LOADING });
 
 
-    axios.get('/api/auth/user', tokenConfig(getState))
+    axios.get('https://codebeattheeaters.herokuapp.com/api/auth/user', tokenConfig(getState))
         .then(res => dispatch({
             type: USER_LOADED,
             payload: res.data

@@ -34,7 +34,7 @@ export class RegisterModal extends Component {
 
     };
     addUser(){
-        axios.post('http://localhost:5000/api/users',this.state.newUserData).then((response)=>{
+        axios.post('https://codebeattheeaters.herokuapp.com/api/users',this.state.newUserData).then((response)=>{
             let { users } = this.state;
             users.push(response.data);
             alert("User registered successfully");

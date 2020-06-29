@@ -5,7 +5,7 @@ import axios from "axios";
 export function isAuthenticated( userData) {
     return function(dispatch) {
 
-        let url =  'http://localhost:5000/api/auth'
+        let url =  'https://codebeattheeaters.herokuapp.com/api/auth'
 
     }
 
@@ -22,7 +22,7 @@ export async function doLogin(email6, password6) {
     if(email6!=="" && password6!=='') {
 
 
-        let url =  'http://localhost:5000/api/auth';
+        let url =  'https://codebeattheeaters.herokuapp.com/api/auth';
 
         let obj={
             email6:email6,
