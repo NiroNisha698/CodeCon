@@ -11,3 +11,6 @@ Solution:-
 People and organizations who want to help the pandemic can donate the amount they wish to donate through our website. Donations
 where they will know who are getting there donations. So that everyone will have a trust.
 © 2020 GitHub, Inc.
+
+
+https://user-images.githubusercontent.com/52610136/96375800-cf90b300-1198-11eb-84ae-a5445c99f74b.jpg
